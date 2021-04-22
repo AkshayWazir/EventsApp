@@ -1,0 +1,51 @@
+.MainDash {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .createEvent {
+    width: fit-content;
+    margin: 1em;
+    border-radius: 1em;
+    border: solid rgba(207, 174, 174, 0.2) 0.1em;
+  }
+  .showevents {
+    width: 16em;
+    margin: 1em;
+    border-radius: 1em;
+    border: solid rgba(207, 174, 174, 0.2) 0.1em;
+  }
+}
+
+.Event {
+  margin: 1em;
+  border: solid rgba(207, 174, 174, 0.2) 0.01em;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  .title {
+    font-weight: bold;
+  }
+
+  .attend {
+    padding: 0.5em;
+    background-color: rgba(207, 174, 174, 0.2);
+    border-radius: 1em;
+    cursor: pointer;
+  }
+
+  .place {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .time{
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+  }
+
+  .attendee {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+  }
+}
